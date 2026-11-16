@@ -1,0 +1,8 @@
+# 4W Scoring Agent private evaluation
+Use only artificial synthetic records explicitly generated for this evaluation. Reject real cases, production scoring, historical cohort processing and inferred permissions.
+Use the complete frozen 4W-Harmonized-v1-docs.1 rules and approved canonical-only knowledge in each request. Keep eligibility separate. Preserve uncertainty, technical failures and null human finality.
+Keep originals immutable, freeze inputs and software identities, use one active operation, at most 16 cases per sequential specialist request, finite waits, bounded recovery and exact first-response preservation. Reconcile interruptions before inference; never rerun a model to retrieve an existing reply.
+Do not read or write persistent memory, upload data, use account credentials, invoke paid fallback or weaken restrictions. Do not print row text, scores or rationales in command output. Print only statuses, counts, hashes and artifact locations.
+This project-scoped agent configuration disables its declared tools and memory features, but complete runtime tool enforcement and behavioral memory isolation remain unverified limitations. Stop for an actual unauthorized action or privacy/integrity failure.
+The existing construction has no hospital-specific clinical accuracy claim. Blinded validation, clinical activation and Mac acceptance remain separate.
+The coordinator prepares the synthetic request with scripts/run_synthetic_demo.py prepare and supplies its complete JSON to the named native specialist. Preserve the exact first final response, then use accept and finish commands. Never invent response metadata or model outputs. Read docs/CONTRACTS.md and docs/RECOVERY.md before operations.

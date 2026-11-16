@@ -1,0 +1,568 @@
+{
+  "authority": "4W-Harmonized-v1-docs.1",
+  "files": {
+    ".codex/agents/4w-scoring-agent.toml": {
+      "bytes": 5724,
+      "sha256": "7b7d0a3c8fbbdc33469eaa8b1d3fb92a9d20fce0f158350bc4385d4c814808d5"
+    },
+    ".gitignore": {
+      "bytes": 127,
+      "sha256": "9d0afa687bbbee1d450327ea8388a36ce5484efc75474bbcc8211fe55fdfc042"
+    },
+    "AGENTS.md": {
+      "bytes": 1720,
+      "sha256": "026a78dac0acda166a8bd9c1ab7466a175bd45c8b29712e619d85621c54f5fc5"
+    },
+    "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md": {
+      "bytes": 6693,
+      "sha256": "03bb9092f4a79370229a2fa2ac10f72d5602f2be849470f966ca127cc0e3ba52"
+    },
+    "KNOWLEDGE_BASE/AUTHORITY/4W-Harmonized-v1/OFFICIAL_TEXT.md": {
+      "bytes": 18610,
+      "sha256": "47a90efcb53036c583f5dc8801af3a0ddcb04eb648631a23bc9d770dd6689ea3"
+    },
+    "KNOWLEDGE_BASE/COHORTS_AND_DATA_DICTIONARY.md": {
+      "bytes": 2223,
+      "sha256": "9aaf35504caef5ce689b785ed8942ce3b33370d2360a8cfa00a3676cbf69cad7"
+    },
+    "KNOWLEDGE_BASE/HARMONIZED_V1/AUTHORITY_SELECTION.json": {
+      "bytes": 819,
+      "sha256": "f3ddbb4f645e3e530a63f3a0a66f26f37c9b73e115c1d98bc0808b5bd9a13460"
+    },
+    "KNOWLEDGE_BASE/HARMONIZED_V1/OUTPUT_SCHEMA.json": {
+      "bytes": 12559,
+      "sha256": "5b628ed08c75edfa9d765db7cfd96265e740b9d546b14df84dadbd36e48237af"
+    },
+    "KNOWLEDGE_BASE/HARMONIZED_V1/RULE_IDS.csv": {
+      "bytes": 6281,
+      "sha256": "bbda2eb4ced7edba5525626fe3733ecd358e52afd71563ee2e505a4697877571"
+    },
+    "KNOWLEDGE_BASE/HARMONIZED_V1/SCORER_PROMPT.md": {
+      "bytes": 3550,
+      "sha256": "e9832ed4a9dba49ed926e9b8cafc6f0f3f6e175022d5fdf2c257eddeaca4d023"
+    },
+    "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md": {
+      "bytes": 12742,
+      "sha256": "dc3a1091591cbfd6584c15f90389740e73e8182d3fc4976afe01c59a9ce9c048"
+    },
+    "LICENSE.md": {
+      "bytes": 755,
+      "sha256": "dfc7a9cf8df05db5d69b8602fe261b6bd6ccee35e32617f16bf16da4e0975350"
+    },
+    "README.md": {
+      "bytes": 2394,
+      "sha256": "2629a356ba9cf53deaa0b4d0500e1715f0261ae2d4c566197b9afe11828f8ac7"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 993,
+      "sha256": "9278e53f21a210a30bab277ea5172ccbb5ee3a6552f5d385e82cb87531044282"
+    },
+    "VERSION": {
+      "bytes": 7,
+      "sha256": "f21dcc10f28ea1ede5510b510904990584f28bd9744914fa4cb7a4811fd458f8"
+    },
+    "docs/CONTRACTS.md": {
+      "bytes": 1873,
+      "sha256": "6fef60b895b20e18f5c2f36b5bf94f00ae2d291a495d8d7b1162337b874c626b"
+    },
+    "docs/LIMITATIONS.md": {
+      "bytes": 1746,
+      "sha256": "731484bc69bd7c5fa6de026f0a1e6f4efcabd6dc4d7eb8defe0fe35fe0a38872"
+    },
+    "docs/PROVENANCE.md": {
+      "bytes": 1382,
+      "sha256": "d80ffbc258e1283dc2c2b50387fb22162cd0715c2401922efbde9f43a71831b5"
+    },
+    "docs/RECOVERY.md": {
+      "bytes": 1982,
+      "sha256": "f5a5453fe182d0919baea5c97603b725d114cda1790fb650d1a77f05a1a69a3e"
+    },
+    "fourw/__init__.py": {
+      "bytes": 82,
+      "sha256": "0e24ca0a6ff456d7c514a5d99860c36b8e59ca88c20f32ef0d4af29131318a27"
+    },
+    "fourw/adjudication.py": {
+      "bytes": 9726,
+      "sha256": "5b93e52b93b271afe912ae18af1768027e6a57bc9b5cce372d307b0fb399c6c5"
+    },
+    "fourw/administration.py": {
+      "bytes": 13809,
+      "sha256": "53132acd59700ce610deabf45b9bc0e90e118deb15df7eda5bb8ef5ed19dbb03"
+    },
+    "fourw/assessments.py": {
+      "bytes": 6927,
+      "sha256": "ac3ad57571353eac14cbf04b56773eb39cab51b7c09916690a2fa2b1ca198304"
+    },
+    "fourw/comparison.py": {
+      "bytes": 5824,
+      "sha256": "bda11fdfda996c8fb88f83ccc934f2d89d92ff33f3f109020a56ef576e7ec2ea"
+    },
+    "fourw/coordinator.py": {
+      "bytes": 11002,
+      "sha256": "d99283e5c7df794666e0a433b94f5e82c2e319bfe6bd71fb195d28100ecb5309"
+    },
+    "fourw/delivery.py": {
+      "bytes": 17129,
+      "sha256": "d47ad2ad7d5a105e67c1235ad6b3b07d1a31c257ebf1a8f9803bbd6fb279cd86"
+    },
+    "fourw/intake.py": {
+      "bytes": 11647,
+      "sha256": "9d84ef47f7ac60b3874a42b4bcc2cfc9a985c81c38fc8d18a493820542ff7ba3"
+    },
+    "fourw/knowledge.py": {
+      "bytes": 17435,
+      "sha256": "68cd021bc7817c995293e2ddd27652bc1c94468679f91585162f7a3ed868f41c"
+    },
+    "fourw/observations.py": {
+      "bytes": 5379,
+      "sha256": "da0c40469d38c9f3050fc66b530b27f525d67b3f3b1342d9e8f6e8b04cd976a8"
+    },
+    "fourw/operation_delivery.py": {
+      "bytes": 13278,
+      "sha256": "bccafecf1e8728ed48b09dc3c23a68bafd2960301f2fe62528bca8ae09972596"
+    },
+    "fourw/packet-profile.json": {
+      "bytes": 11972,
+      "sha256": "3ad86fd1250c8a764f81db0ce47d36f8ca087a8f7667dec593c5a73e90b7659d"
+    },
+    "fourw/packet_guard.py": {
+      "bytes": 7973,
+      "sha256": "93f441e722937f551ffff1717e2858b9708afc22748f54cbbc62ec6436babde1"
+    },
+    "fourw/review_import.py": {
+      "bytes": 11721,
+      "sha256": "21d3d74e9817a64e8c9cf3f0b7aa167a5be07842b78605bf15acb1cdb17186bd"
+    },
+    "fourw/reviews.py": {
+      "bytes": 11333,
+      "sha256": "99b5fee613fbe26a219d46964206857eb0492cd218e2775575ed9913075d0254"
+    },
+    "fourw/runs.py": {
+      "bytes": 20953,
+      "sha256": "97dd07ff99c70566d6bc945ccdad4bc3b9c530fdea0a0b196246fc124bf37785"
+    },
+    "fourw/specialist.py": {
+      "bytes": 14929,
+      "sha256": "9dcd6a3a00335971bd846e755bf7f572c12a35e9f2aaa599f82124742a1c317b"
+    },
+    "requirements-dev.txt": {
+      "bytes": 193,
+      "sha256": "8d6cbb3bbd006b660298d65e5e5bf1810ced1133e39132ff028ee0b950320a44"
+    },
+    "requirements.txt": {
+      "bytes": 167,
+      "sha256": "b18722aeae74656cdb7229b1ffefa75f5fba8d176252d8b463e1e1a4b0fe9966"
+    },
+    "scripts/install.ps1": {
+      "bytes": 538,
+      "sha256": "be5496741eb1814ae3ffbae38c520ec05fe991a1d7caf53f0f465b184b0d6077"
+    },
+    "scripts/run_synthetic_demo.py": {
+      "bytes": 14981,
+      "sha256": "7bf19d7128f41283304ff3d204f71c50b4b7e02bef4d4d647e38b244472447e1"
+    },
+    "scripts/uninstall.ps1": {
+      "bytes": 2057,
+      "sha256": "745097ee4297df0adb59409783da42e1c3baea4da90b72df321b08169631a2c8"
+    },
+    "scripts/verify.ps1": {
+      "bytes": 695,
+      "sha256": "3a727a41425743793e43f989899abe0f1cafe3c828f1b6eaabaceeec555cb00c"
+    },
+    "tests/fixtures/delivery/plan.json": {
+      "bytes": 14789,
+      "sha256": "c64a48d3c6c933b86239c0abbc60d950a056655cbb0cd2bf5a48c569617f43fb"
+    },
+    "tests/fixtures/delivery/results.xlsx": {
+      "bytes": 9872,
+      "sha256": "d5c2affc0014a92afca6f781608a7cf2979805d238e7dc89a136c62ae43e34df"
+    },
+    "tests/fixtures/review-variants/private-linkage.json": {
+      "bytes": 2121,
+      "sha256": "bbb62c1e421759da5b096121d92c26b22e6ae6792af0e863c30b9dae83e0a253"
+    },
+    "tests/fixtures/review-variants/public-plan.json": {
+      "bytes": 2509,
+      "sha256": "8aafcd161ed837364ecd83242f80bdbbc971a01b17a3161652ad322c724246c1"
+    },
+    "tests/fixtures/review-variants/results.xlsx": {
+      "bytes": 7151,
+      "sha256": "a2cb98f9d49f2a077a1b989cfbd2e1bd326bfc82e1ebb2f40dfa3fee825d6774"
+    },
+    "tests/fixtures/review/export/results.xlsx": {
+      "bytes": 6929,
+      "sha256": "af2cdb61dd4de62387a06610ecfcbebbfaede9d51ded6c675ab4eeb1dedd1c27"
+    },
+    "tests/fixtures/review/private-linkage.json": {
+      "bytes": 1590,
+      "sha256": "e8b908ffe6f8e7963cf77f64bda90f3f8926755921c7644745e3c7f96211b703"
+    },
+    "tests/fixtures/review/public-plan.json": {
+      "bytes": 1661,
+      "sha256": "f327e0ef9924f2c1760ce76cf5e0615100ce5aebf758b52f4275725ef908b506"
+    },
+    "tests/test_adjudication.py": {
+      "bytes": 13879,
+      "sha256": "0c5942e829778b147d522c280a5ed3b0aa7d39b6cc11fb61a614dadf6b125c9e"
+    },
+    "tests/test_administration.py": {
+      "bytes": 20057,
+      "sha256": "72cf02ab9c138242ed4a058f7f36f985b1ca26db980c973439845f5d3263359d"
+    },
+    "tests/test_assessments.py": {
+      "bytes": 7570,
+      "sha256": "ddbc6088e905f31f96adaaec2345353588d3830b823704b29892ae20d1fc9009"
+    },
+    "tests/test_comparison.py": {
+      "bytes": 5341,
+      "sha256": "5f7fb873f6d0ae13983e919d18153b9173f655690bae4589f30995b7c3e148c5"
+    },
+    "tests/test_delivery.py": {
+      "bytes": 10668,
+      "sha256": "da9391b73f5eeab4d20781fc67e0d6a740bf07dc6b7b5dbd2489a53c403a8baa"
+    },
+    "tests/test_distribution.py": {
+      "bytes": 5140,
+      "sha256": "6bd8aa074a6c9dbcb90401abaa36053b01faa60914ca62049d1ce1ee4833b2e9"
+    },
+    "tests/test_intake.py": {
+      "bytes": 11556,
+      "sha256": "6188fded7a394bbfeb1e65389fc501c6263dd5e17ed4437125f260029c5fb595"
+    },
+    "tests/test_knowledge.py": {
+      "bytes": 23252,
+      "sha256": "0cc33737191f34d8997c87d99a8a6bd0542298c5e61e669e9cf4cf7a717518cb"
+    },
+    "tests/test_packet_guard.py": {
+      "bytes": 7429,
+      "sha256": "794ce834457e17c6ed6b5015fc0283feefc6a5a1cc7d1891cceb7cca048f7075"
+    },
+    "tests/test_review_import.py": {
+      "bytes": 13015,
+      "sha256": "815341d8ffe5df1e454f7fdad39d6405836dd1ac3c0665dfad54880cec7efe8c"
+    },
+    "tests/test_reviews.py": {
+      "bytes": 9782,
+      "sha256": "54c589d9255cf5e3b7ff7300fffa0c49fd6842ef02363ba98a9cdeab7ac8d666"
+    },
+    "tests/test_runs.py": {
+      "bytes": 18810,
+      "sha256": "fc771c6b6e8eb38d8972b5a1f748ca9b845dce2ef532c9ceb89d4c54a3539af3"
+    },
+    "tests/test_specialist.py": {
+      "bytes": 14394,
+      "sha256": "81ca63794d61078d5af8200de8223495957a9180c70568ea42f6cff173d0a0b6"
+    },
+    "workbook.mjs": {
+      "bytes": 6389,
+      "sha256": "559e8e7ea54c291b68af1bcf073330715943cd1510c80aee842b52f9bfa5cecb"
+    }
+  },
+  "omitted_research_references": [
+    {
+      "document": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+      "label": "unchanged official rubric",
+      "target": "<../4W AI scoring rubric.docx>"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+      "label": "crosswalk",
+      "target": "HARMONIZED_V1/CROSSWALK.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+      "label": "decisions",
+      "target": "SOURCE_AND_DECISIONS.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+      "label": "pre-change snapshot",
+      "target": "../../../AI%20Projects/4Ws%20knowledge%20base%20refinement/KNOWLEDGE_BASE-copy/HISTORY/pre-harmonization-20260922T190542Z.zip"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+      "label": "Version index",
+      "target": "RUBRICS_AND_SCORING_VERSIONS.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+      "label": "Decision register",
+      "target": "SOURCE_AND_DECISIONS.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+      "label": "Decisions",
+      "target": "SOURCE_AND_DECISIONS.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+      "label": "baseline protocol",
+      "target": "HARMONIZED_V1/BASELINE_AND_VALIDATION_PLAN.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md",
+      "label": "official record",
+      "target": "AUTHORITY/4W-Harmonized-v1/AUTHORITY_RECORD.json"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md",
+      "label": "baseline protocol",
+      "target": "HARMONIZED_V1/BASELINE_AND_VALIDATION_PLAN.md#human-review-coverage"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md",
+      "label": "crosswalk",
+      "target": "HARMONIZED_V1/CROSSWALK.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md",
+      "label": "Calibration fixtures",
+      "target": "HARMONIZED_V1/CALIBRATION_FIXTURES.csv"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md",
+      "label": "baseline protocol",
+      "target": "HARMONIZED_V1/BASELINE_AND_VALIDATION_PLAN.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md",
+      "label": "unchanged historical snapshot",
+      "target": "<../../../AI%20Projects/4Ws%20knowledge%20base%20refinement/KNOWLEDGE_BASE-copy/HISTORY/pre-harmonization-20260922T190542Z.zip>"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md",
+      "label": "original version records",
+      "target": "RUBRICS_AND_SCORING_VERSIONS.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/HARMONIZED_V1/SCORER_PROMPT.md",
+      "label": "Baseline review coverage and execution gates",
+      "target": "BASELINE_AND_VALIDATION_PLAN.md"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/HARMONIZED_V1/SCORER_PROMPT.md",
+      "label": "baseline protocol",
+      "target": "BASELINE_AND_VALIDATION_PLAN.md#purpose-and-gates"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/AUTHORITY/4W-Harmonized-v1/OFFICIAL_TEXT.md",
+      "label": "unchanged DOCX",
+      "target": "<../../../4W AI scoring rubric.docx>"
+    },
+    {
+      "document": "KNOWLEDGE_BASE/AUTHORITY/4W-Harmonized-v1/OFFICIAL_TEXT.md",
+      "label": "authority record",
+      "target": "AUTHORITY_RECORD.json"
+    }
+  ],
+  "previous_release_manifest_sha256": "14e48750591268c6606da85af52523e6100e18d9ab9eb9fc63f481b44a1d561e",
+  "scope": "private_synthetic_evaluation_only",
+  "sources": {
+    ".codex/agents/4w-scoring-agent.toml": {
+      "adaptation": "Synthetic-only release; removed research calibration activation and private project identity.",
+      "source": ".codex/agents/4w-scoring-agent.toml",
+      "source_sha256": "12c15c64487e37fe22cc1aef6e1ef6969d9539a712042580780312e0ddd68dba"
+    },
+    "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md": {
+      "source": "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md",
+      "source_sha256": "4b2e12cb755a0df8f2ead0eae376881b98cd4c5b698abf41b822879860b3c0e3"
+    },
+    "KNOWLEDGE_BASE/AUTHORITY/4W-Harmonized-v1/OFFICIAL_TEXT.md": {
+      "source": "KNOWLEDGE_BASE/AUTHORITY/4W-Harmonized-v1/OFFICIAL_TEXT.md",
+      "source_sha256": "3192405e22d2e3648c2db9a9adffdbb8768cc0d3c354d36b5d69da3b4b28767c"
+    },
+    "KNOWLEDGE_BASE/COHORTS_AND_DATA_DICTIONARY.md": {
+      "adaptation": "Prospective normative policy and validation limitation only; excludes historical cohorts, six order IDs and provenance.",
+      "source": "KNOWLEDGE_BASE/COHORTS_AND_DATA_DICTIONARY.md",
+      "source_sha256": "f62fd3369f02a3a97c09eee5e4c7ff1a096cc8bf55526e3ee89682d160e33416"
+    },
+    "KNOWLEDGE_BASE/HARMONIZED_V1/AUTHORITY_SELECTION.json": {
+      "adaptation": "Retains sole authority and canonical owners; omits research inventories and approvals.",
+      "source": "KNOWLEDGE_BASE/HARMONIZED_V1/AUTHORITY_SELECTION.json",
+      "source_sha256": "432f9c4a74731e1a30dd0c7c815b4a3213e9d95e5ec1ad6d4f5f8021ee4c817f"
+    },
+    "KNOWLEDGE_BASE/HARMONIZED_V1/OUTPUT_SCHEMA.json": {
+      "source": "KNOWLEDGE_BASE/HARMONIZED_V1/OUTPUT_SCHEMA.json",
+      "source_sha256": "5b628ed08c75edfa9d765db7cfd96265e740b9d546b14df84dadbd36e48237af"
+    },
+    "KNOWLEDGE_BASE/HARMONIZED_V1/RULE_IDS.csv": {
+      "source": "KNOWLEDGE_BASE/HARMONIZED_V1/RULE_IDS.csv",
+      "source_sha256": "bbda2eb4ced7edba5525626fe3733ecd358e52afd71563ee2e505a4697877571"
+    },
+    "KNOWLEDGE_BASE/HARMONIZED_V1/SCORER_PROMPT.md": {
+      "source": "KNOWLEDGE_BASE/HARMONIZED_V1/SCORER_PROMPT.md",
+      "source_sha256": "06e30e0c6c9199ca5c9c82277d1d1b952f9793b82080b164103f3346bb2b194e"
+    },
+    "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md": {
+      "source": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+      "source_sha256": "c939908756bb03fd30cf39e390437e96c0dcc38d03e75706d3c9a5cc28815464"
+    },
+    "fourw/__init__.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/__init__.py",
+      "source_sha256": "0e24ca0a6ff456d7c514a5d99860c36b8e59ca88c20f32ef0d4af29131318a27"
+    },
+    "fourw/adjudication.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/adjudication.py",
+      "source_sha256": "5b93e52b93b271afe912ae18af1768027e6a57bc9b5cce372d307b0fb399c6c5"
+    },
+    "fourw/administration.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/administration.py",
+      "source_sha256": "53132acd59700ce610deabf45b9bc0e90e118deb15df7eda5bb8ef5ed19dbb03"
+    },
+    "fourw/assessments.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/assessments.py",
+      "source_sha256": "ac3ad57571353eac14cbf04b56773eb39cab51b7c09916690a2fa2b1ca198304"
+    },
+    "fourw/comparison.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/comparison.py",
+      "source_sha256": "bda11fdfda996c8fb88f83ccc934f2d89d92ff33f3f109020a56ef576e7ec2ea"
+    },
+    "fourw/coordinator.py": {
+      "adaptation": "Removed dispatch/imports for excluded research calibration; preserved synthetic coordinator.",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/coordinator.py",
+      "source_sha256": "f67cd4bdc347a0bddf9e79375963329c707670de588ea2650355256d96a517a1"
+    },
+    "fourw/delivery.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/delivery.py",
+      "source_sha256": "d47ad2ad7d5a105e67c1235ad6b3b07d1a31c257ebf1a8f9803bbd6fb279cd86"
+    },
+    "fourw/intake.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/intake.py",
+      "source_sha256": "9d84ef47f7ac60b3874a42b4bcc2cfc9a985c81c38fc8d18a493820542ff7ba3"
+    },
+    "fourw/knowledge.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/knowledge.py",
+      "source_sha256": "68cd021bc7817c995293e2ddd27652bc1c94468679f91585162f7a3ed868f41c"
+    },
+    "fourw/observations.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/observations.py",
+      "source_sha256": "da0c40469d38c9f3050fc66b530b27f525d67b3f3b1342d9e8f6e8b04cd976a8"
+    },
+    "fourw/operation_delivery.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/operation_delivery.py",
+      "source_sha256": "bccafecf1e8728ed48b09dc3c23a68bafd2960301f2fe62528bca8ae09972596"
+    },
+    "fourw/packet-profile.json": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/packet-profile.json",
+      "source_sha256": "3ad86fd1250c8a764f81db0ce47d36f8ca087a8f7667dec593c5a73e90b7659d"
+    },
+    "fourw/packet_guard.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/packet_guard.py",
+      "source_sha256": "93f441e722937f551ffff1717e2858b9708afc22748f54cbbc62ec6436babde1"
+    },
+    "fourw/review_import.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/review_import.py",
+      "source_sha256": "21d3d74e9817a64e8c9cf3f0b7aa167a5be07842b78605bf15acb1cdb17186bd"
+    },
+    "fourw/reviews.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/reviews.py",
+      "source_sha256": "99b5fee613fbe26a219d46964206857eb0492cd218e2775575ed9913075d0254"
+    },
+    "fourw/runs.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/runs.py",
+      "source_sha256": "97dd07ff99c70566d6bc945ccdad4bc3b9c530fdea0a0b196246fc124bf37785"
+    },
+    "fourw/specialist.py": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/fourw/specialist.py",
+      "source_sha256": "9dcd6a3a00335971bd846e755bf7f572c12a35e9f2aaa599f82124742a1c317b"
+    },
+    "tests/fixtures/delivery/plan.json": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/fixtures/delivery/plan.json",
+      "source_sha256": "c64a48d3c6c933b86239c0abbc60d950a056655cbb0cd2bf5a48c569617f43fb"
+    },
+    "tests/fixtures/delivery/results.xlsx": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/fixtures/delivery/results.xlsx",
+      "source_sha256": "d5c2affc0014a92afca6f781608a7cf2979805d238e7dc89a136c62ae43e34df"
+    },
+    "tests/fixtures/review-variants/private-linkage.json": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/fixtures/review-variants/private-linkage.json",
+      "source_sha256": "bbb62c1e421759da5b096121d92c26b22e6ae6792af0e863c30b9dae83e0a253"
+    },
+    "tests/fixtures/review-variants/public-plan.json": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/fixtures/review-variants/public-plan.json",
+      "source_sha256": "8aafcd161ed837364ecd83242f80bdbbc971a01b17a3161652ad322c724246c1"
+    },
+    "tests/fixtures/review-variants/results.xlsx": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/fixtures/review-variants/results.xlsx",
+      "source_sha256": "a2cb98f9d49f2a077a1b989cfbd2e1bd326bfc82e1ebb2f40dfa3fee825d6774"
+    },
+    "tests/fixtures/review/export/results.xlsx": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/fixtures/review/export/results.xlsx",
+      "source_sha256": "af2cdb61dd4de62387a06610ecfcbebbfaede9d51ded6c675ab4eeb1dedd1c27"
+    },
+    "tests/fixtures/review/private-linkage.json": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/fixtures/review/private-linkage.json",
+      "source_sha256": "e8b908ffe6f8e7963cf77f64bda90f3f8926755921c7644745e3c7f96211b703"
+    },
+    "tests/fixtures/review/public-plan.json": {
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/fixtures/review/public-plan.json",
+      "source_sha256": "f327e0ef9924f2c1760ce76cf5e0615100ce5aebf758b52f4275725ef908b506"
+    },
+    "tests/test_adjudication.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_adjudication.py",
+      "source_sha256": "0c5942e829778b147d522c280a5ed3b0aa7d39b6cc11fb61a614dadf6b125c9e"
+    },
+    "tests/test_administration.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_administration.py",
+      "source_sha256": "72cf02ab9c138242ed4a058f7f36f985b1ca26db980c973439845f5d3263359d"
+    },
+    "tests/test_assessments.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_assessments.py",
+      "source_sha256": "60a2a3a7e75a205107e4c7649cd0a57cf944a9060d345c8934a526c2760a25e8"
+    },
+    "tests/test_comparison.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_comparison.py",
+      "source_sha256": "5f7fb873f6d0ae13983e919d18153b9173f655690bae4589f30995b7c3e148c5"
+    },
+    "tests/test_delivery.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_delivery.py",
+      "source_sha256": "da9391b73f5eeab4d20781fc67e0d6a740bf07dc6b7b5dbd2489a53c403a8baa"
+    },
+    "tests/test_intake.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_intake.py",
+      "source_sha256": "6188fded7a394bbfeb1e65389fc501c6263dd5e17ed4437125f260029c5fb595"
+    },
+    "tests/test_knowledge.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_knowledge.py",
+      "source_sha256": "0cc33737191f34d8997c87d99a8a6bd0542298c5e61e669e9cf4cf7a717518cb"
+    },
+    "tests/test_packet_guard.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_packet_guard.py",
+      "source_sha256": "794ce834457e17c6ed6b5015fc0283feefc6a5a1cc7d1891cceb7cca048f7075"
+    },
+    "tests/test_review_import.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_review_import.py",
+      "source_sha256": "815341d8ffe5df1e454f7fdad39d6405836dd1ac3c0665dfad54880cec7efe8c"
+    },
+    "tests/test_reviews.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_reviews.py",
+      "source_sha256": "54c589d9255cf5e3b7ff7300fffa0c49fd6842ef02363ba98a9cdeab7ac8d666"
+    },
+    "tests/test_runs.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_runs.py",
+      "source_sha256": "fc771c6b6e8eb38d8972b5a1f748ca9b845dce2ef532c9ceb89d4c54a3539af3"
+    },
+    "tests/test_specialist.py": {
+      "adaptation": "Test project-root path only",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/tests/test_specialist.py",
+      "source_sha256": "81ca63794d61078d5af8200de8223495957a9180c70568ea42f6cff173d0a0b6"
+    },
+    "workbook.mjs": {
+      "adaptation": "None",
+      "source": "AGENT_SUPPORT/4w-scoring-agent/workbook.mjs",
+      "source_sha256": "559e8e7ea54c291b68af1bcf073330715943cd1510c80aee842b52f9bfa5cecb"
+    }
+  },
+  "version": "0.1.1"
+}

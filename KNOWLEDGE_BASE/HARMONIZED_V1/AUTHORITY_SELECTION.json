@@ -1,0 +1,17 @@
+{
+  "selected_authority": "4W-Harmonized-v1-docs.1",
+  "status": "sole-active-prospective-scoring-and-adjudication-authority",
+  "canonical_owners": {
+    "scoring": "KNOWLEDGE_BASE/PROSPECTIVE_4W_RUBRIC.md",
+    "adjudication": "KNOWLEDGE_BASE/ADJUDICATION_AND_CALIBRATION.md",
+    "eligibility": "KNOWLEDGE_BASE/COHORTS_AND_DATA_DICTIONARY.md",
+    "baseline_design": "KNOWLEDGE_BASE/HARMONIZED_V1/BASELINE_AND_VALIDATION_PLAN.md"
+  },
+  "record_version": "distribution-0.1.0",
+  "policy": "Synthetic evaluation only. No research activation, real cases or inherited source permissions.",
+  "supporting_contracts": {
+    "schema": "KNOWLEDGE_BASE/HARMONIZED_V1/OUTPUT_SCHEMA.json",
+    "scorer_prompt": "KNOWLEDGE_BASE/HARMONIZED_V1/SCORER_PROMPT.md",
+    "rule_ids": "KNOWLEDGE_BASE/HARMONIZED_V1/RULE_IDS.csv"
+  }
+}

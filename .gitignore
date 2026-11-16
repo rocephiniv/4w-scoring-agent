@@ -1,0 +1,12 @@
+/.venv/
+/.venv-*/
+/.install/
+/runs/
+/_local/
+/.pytest_cache/
+/.hypothesis/
+/**/__pycache__/
+*.pyc
+.coverage*
+desktop.ini
+*.log

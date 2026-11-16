@@ -1,0 +1,511 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "4W-Harmonized-v1 output contract supporting 4W-Harmonized-v1-docs.1; no run activation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_ref",
+    "rubric_version",
+    "run_ref",
+    "eligibility",
+    "first_pass",
+    "independent_reviews",
+    "final_adjudication"
+  ],
+  "properties": {
+    "case_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "De-identified source reference, never direct identifiers"
+    },
+    "rubric_version": {
+      "const": "4W-Harmonized-v1"
+    },
+    "run_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Approved run/data/model/prompt versions must be recorded in its separate manifest"
+    },
+    "eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision",
+        "reason",
+        "review_status"
+      ],
+      "properties": {
+        "decision": {
+          "enum": [
+            "eligible",
+            "excluded",
+            "pending"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "review_status": {
+          "enum": [
+            "first-pass",
+            "pending-human-review",
+            "human-confirmed"
+          ]
+        }
+      }
+    },
+    "first_pass": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/scoring"
+        }
+      ]
+    },
+    "independent_reviews": {
+      "type": "array",
+      "maxItems": 2,
+      "items": {
+        "$ref": "#/$defs/review"
+      }
+    },
+    "final_adjudication": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "eligibility",
+            "scores",
+            "total",
+            "complete",
+            "authority",
+            "rationale",
+            "policy_change"
+          ],
+          "properties": {
+            "eligibility": {
+              "enum": [
+                "eligible",
+                "excluded"
+              ]
+            },
+            "scores": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "what",
+                    "when",
+                    "where",
+                    "why"
+                  ],
+                  "properties": {
+                    "what": {
+                      "type": "integer",
+                      "enum": [
+                        0,
+                        1
+                      ]
+                    },
+                    "when": {
+                      "type": "integer",
+                      "enum": [
+                        0,
+                        1
+                      ]
+                    },
+                    "where": {
+                      "type": "integer",
+                      "enum": [
+                        0,
+                        1
+                      ]
+                    },
+                    "why": {
+                      "type": "integer",
+                      "enum": [
+                        0,
+                        1
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "total": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 4
+            },
+            "complete": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "authority": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "policy_change": {
+              "type": "boolean"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "scoring": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scores",
+        "total",
+        "evidence",
+        "rule_ids",
+        "flags",
+        "provisional_complete",
+        "finalized_complete"
+      ],
+      "properties": {
+        "scores": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "what",
+            "when",
+            "where",
+            "why"
+          ],
+          "properties": {
+            "what": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "when": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "where": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "why": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "what",
+            "when",
+            "where",
+            "why"
+          ],
+          "properties": {
+            "what": {
+              "type": "string",
+              "description": "Minimal indication quote/paraphrase; 0 may state absence without invented text"
+            },
+            "when": {
+              "type": "string",
+              "description": "Minimal indication quote/paraphrase; 0 may state absence without invented text"
+            },
+            "where": {
+              "type": "string",
+              "description": "Minimal indication quote/paraphrase; 0 may state absence without invented text"
+            },
+            "why": {
+              "type": "string",
+              "description": "Minimal indication quote/paraphrase; 0 may state absence without invented text"
+            }
+          }
+        },
+        "rule_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "H1-GOV-AUTHORITY",
+              "H1-INPUT",
+              "H1-WHAT-CURRENT",
+              "H1-WHAT-ESTABLISHED",
+              "H1-WHAT-DEVICE",
+              "H1-WHAT-TRAUMA",
+              "H1-WHAT-REASSESS",
+              "H1-WHAT-EXCLUDE",
+              "H1-WHEN-ANCHOR",
+              "H1-WHEN-ACUITY",
+              "H1-WHEN-TRANSITION",
+              "H1-WHEN-LINKED-EVENT",
+              "H1-WHEN-EXCLUDE",
+              "H1-WHERE-HIERARCHY",
+              "H1-WHERE-NONLOCALIZABLE",
+              "H1-WHERE-ENTITY",
+              "H1-WHERE-PATTERN",
+              "H1-WHERE-IMAGING",
+              "H1-WHERE-CONTEXT",
+              "H1-WHERE-DEVICE",
+              "H1-WHERE-OTHER",
+              "H1-WHERE-EXCLUDE",
+              "H1-WHY-SUSPECTED",
+              "H1-WHY-SOURCE",
+              "H1-WHY-DEVICE",
+              "H1-WHY-REASSESS",
+              "H1-WHY-COMPLICATION",
+              "H1-WHY-PATHWAY",
+              "H1-WHY-TRAUMA",
+              "H1-WHY-EXCLUDE",
+              "H1-CERTAINTY",
+              "H1-OUTPUT",
+              "H1-ADJUDICATION",
+              "H1-GOV-ELIGIBILITY",
+              "H1-GOV-HISTORY",
+              "H1-GOV-BASELINE",
+              "H1-EX01",
+              "H1-EX02",
+              "H1-EX03",
+              "H1-EX04",
+              "H1-EX05",
+              "H1-EX06",
+              "H1-EX07",
+              "H1-EX08",
+              "H1-EX09",
+              "H1-EX10",
+              "H1-EX11",
+              "H1-EX12",
+              "H1-EX13",
+              "H1-EX14"
+            ]
+          }
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "affected_ws",
+              "reason"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "wording",
+                  "rule-conflict",
+                  "unlisted-exception",
+                  "history-negation",
+                  "clinical-review-disagreement",
+                  "clerical"
+                ]
+              },
+              "affected_ws": {
+                "type": "array",
+                "uniqueItems": true,
+                "minItems": 1,
+                "items": {
+                  "enum": [
+                    "what",
+                    "when",
+                    "where",
+                    "why"
+                  ]
+                }
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "provisional_complete": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "finalized_complete": {
+          "type": "null"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "flags": {
+                "minItems": 1
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "provisional_complete": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "provisional_complete": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reviewer_ref",
+        "eligibility",
+        "scores",
+        "evidence",
+        "uncertainty",
+        "recorded_before_discussion"
+      ],
+      "properties": {
+        "reviewer_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "eligibility": {
+          "enum": [
+            "eligible",
+            "excluded",
+            "pending"
+          ]
+        },
+        "scores": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "what",
+                "when",
+                "where",
+                "why"
+              ],
+              "properties": {
+                "what": {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1
+                  ]
+                },
+                "when": {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1
+                  ]
+                },
+                "where": {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1
+                  ]
+                },
+                "why": {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "evidence": {
+          "type": "string"
+        },
+        "uncertainty": {
+          "type": "string"
+        },
+        "recorded_before_discussion": {
+          "const": true
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "eligibility": {
+            "properties": {
+              "decision": {
+                "const": "eligible"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "first_pass": {
+            "$ref": "#/$defs/scoring"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "first_pass": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "Sole prospective scoring/adjudication authority: 4W-Harmonized-v1-docs.1. Load AUTHORITY_SELECTION.json, ../PROSPECTIVE_4W_RUBRIC.md and ../ADJUDICATION_AND_CALIBRATION.md. Existing rubric_version family identifier and all validation constraints are unchanged. Authority selection does not authorize a run."
+}
